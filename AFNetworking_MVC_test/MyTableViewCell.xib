@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="MyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAF-UR-PAs">
+                        <rect key="frame" x="114" y="8" width="228" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="65R-Pt-cyE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电商平台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C70-a1-ds4">
+                        <rect key="frame" x="114" y="51" width="228" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Djq-8E-sqM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made in :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPh-yZ-JsI">
+                        <rect key="frame" x="114" y="73" width="228" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eH5-Fr-daM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmx-fz-1NR">
+                        <rect key="frame" x="114" y="95" width="228" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fzV-Te-MYN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jrI-Sr-wiW">
+                        <rect key="frame" x="15" y="9" width="84" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="108" id="ZdG-ZE-SyQ"/>
+                            <constraint firstAttribute="width" constant="84" id="dll-cK-wZI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tmx-fz-1NR" firstAttribute="leading" secondItem="jrI-Sr-wiW" secondAttribute="trailing" constant="15" id="2Qg-EK-af2"/>
+                    <constraint firstItem="jrI-Sr-wiW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4kD-ml-98h"/>
+                    <constraint firstAttribute="bottom" secondItem="WPh-yZ-JsI" secondAttribute="bottom" constant="31.5" id="5Et-Bd-SKh"/>
+                    <constraint firstItem="WPh-yZ-JsI" firstAttribute="leading" secondItem="jrI-Sr-wiW" secondAttribute="trailing" constant="15" id="74n-HY-fON"/>
+                    <constraint firstItem="C70-a1-ds4" firstAttribute="leading" secondItem="jrI-Sr-wiW" secondAttribute="trailing" constant="15" id="AEf-49-j9r"/>
+                    <constraint firstItem="WPh-yZ-JsI" firstAttribute="leading" secondItem="dAF-UR-PAs" secondAttribute="leading" id="Awf-5B-woZ"/>
+                    <constraint firstAttribute="trailing" secondItem="dAF-UR-PAs" secondAttribute="trailing" constant="15" id="FU8-mB-jwW"/>
+                    <constraint firstItem="C70-a1-ds4" firstAttribute="centerX" secondItem="dAF-UR-PAs" secondAttribute="centerX" id="MMM-jA-GAd"/>
+                    <constraint firstItem="jrI-Sr-wiW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Rex-eR-M4r"/>
+                    <constraint firstItem="Tmx-fz-1NR" firstAttribute="leading" secondItem="dAF-UR-PAs" secondAttribute="leading" id="Toi-JH-chk"/>
+                    <constraint firstItem="Tmx-fz-1NR" firstAttribute="top" secondItem="WPh-yZ-JsI" secondAttribute="bottom" constant="1" id="VKo-eN-KlM"/>
+                    <constraint firstItem="Tmx-fz-1NR" firstAttribute="centerX" secondItem="dAF-UR-PAs" secondAttribute="centerX" id="dHp-i3-2K3"/>
+                    <constraint firstItem="C70-a1-ds4" firstAttribute="top" secondItem="dAF-UR-PAs" secondAttribute="bottom" constant="8" id="i54-yn-DyQ"/>
+                    <constraint firstItem="WPh-yZ-JsI" firstAttribute="centerX" secondItem="dAF-UR-PAs" secondAttribute="centerX" id="jhL-EJ-ZWR"/>
+                    <constraint firstAttribute="trailing" secondItem="Tmx-fz-1NR" secondAttribute="trailing" constant="15" id="nR7-pJ-YBa"/>
+                    <constraint firstItem="dAF-UR-PAs" firstAttribute="leading" secondItem="jrI-Sr-wiW" secondAttribute="trailing" constant="15" id="pFE-lX-psj"/>
+                    <constraint firstItem="WPh-yZ-JsI" firstAttribute="top" secondItem="C70-a1-ds4" secondAttribute="bottom" constant="1" id="qAR-GE-xwh"/>
+                    <constraint firstAttribute="trailing" secondItem="WPh-yZ-JsI" secondAttribute="trailing" constant="15" id="sog-b3-tIA"/>
+                    <constraint firstAttribute="trailing" secondItem="C70-a1-ds4" secondAttribute="trailing" constant="15" id="xtF-b5-BJG"/>
+                    <constraint firstItem="C70-a1-ds4" firstAttribute="leading" secondItem="dAF-UR-PAs" secondAttribute="leading" id="z2o-rH-ewI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="producetPic" destination="jrI-Sr-wiW" id="nb6-Fa-Ufb"/>
+                <outlet property="productMadeIn" destination="WPh-yZ-JsI" id="vXM-jZ-MAh"/>
+                <outlet property="productName" destination="dAF-UR-PAs" id="Ump-OM-gLK"/>
+                <outlet property="productPublishTime" destination="Tmx-fz-1NR" id="ltX-QG-UpH"/>
+                <outlet property="productSite" destination="C70-a1-ds4" id="pbc-uO-laR"/>
+            </connections>
+            <point key="canvasLocation" x="-67.5" y="137"/>
+        </tableViewCell>
+    </objects>
+</document>
