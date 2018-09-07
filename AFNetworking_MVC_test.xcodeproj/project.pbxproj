@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228191F8214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 228191F5214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.m */; };
+		228191F9214255EA00B27BDE /* UITableView+NoDataPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 228191F7214255EA00B27BDE /* UITableView+NoDataPlaceholder.m */; };
+		228191FC2142561A00B27BDE /* NoDataPlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228191FA2142561A00B27BDE /* NoDataPlaceHolderView.m */; };
 		6563DE3F1FAF39C800A739FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563DE3E1FAF39C800A739FB /* main.m */; };
 		6563DE421FAF39C800A739FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563DE411FAF39C800A739FB /* AppDelegate.m */; };
 		6563DE451FAF39C800A739FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563DE441FAF39C800A739FB /* ViewController.m */; };
@@ -41,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		0E4864AD10BA98CA38E47602 /* libPods-AFNetworking_MVC_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking_MVC_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		228191F4214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+NoDataPlaceHolder.h"; sourceTree = "<group>"; };
+		228191F5214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NoDataPlaceHolder.m"; sourceTree = "<group>"; };
+		228191F6214255EA00B27BDE /* UITableView+NoDataPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoDataPlaceholder.h"; sourceTree = "<group>"; };
+		228191F7214255EA00B27BDE /* UITableView+NoDataPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoDataPlaceholder.m"; sourceTree = "<group>"; };
+		228191FA2142561A00B27BDE /* NoDataPlaceHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataPlaceHolderView.m; sourceTree = "<group>"; };
+		228191FB2142561A00B27BDE /* NoDataPlaceHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataPlaceHolderView.h; sourceTree = "<group>"; };
 		474E010A09A0310E79B5F9C3 /* Pods-AFNetworking_MVC_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworking_MVC_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworking_MVC_test/Pods-AFNetworking_MVC_test.debug.xcconfig"; sourceTree = "<group>"; };
 		6563DE3A1FAF39C800A739FB /* AFNetworking_MVC_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetworking_MVC_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6563DE3E1FAF39C800A739FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		228191F3214255EA00B27BDE /* NewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				228191F4214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.h */,
+				228191F5214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.m */,
+				228191F6214255EA00B27BDE /* UITableView+NoDataPlaceholder.h */,
+				228191F7214255EA00B27BDE /* UITableView+NoDataPlaceholder.m */,
+				228191FB2142561A00B27BDE /* NoDataPlaceHolderView.h */,
+				228191FA2142561A00B27BDE /* NoDataPlaceHolderView.m */,
+			);
+			path = NewHolder;
+			sourceTree = "<group>";
+		};
 		4DF4B886F0F926B967619312 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +149,7 @@
 		6563DE3C1FAF39C800A739FB /* AFNetworking_MVC_test */ = {
 			isa = PBXGroup;
 			children = (
+				228191F3214255EA00B27BDE /* NewHolder */,
 				6563DE781FAF67A500A739FB /* MyTableViewCell.h */,
 				6563DE791FAF67A500A739FB /* MyTableViewCell.m */,
 				6563DE7A1FAF67A500A739FB /* MyTableViewCell.xib */,
@@ -378,8 +401,11 @@
 				6563DE451FAF39C800A739FB /* ViewController.m in Sources */,
 				6563DE771FAF5CE300A739FB /* MyModel.m in Sources */,
 				6563DE421FAF39C800A739FB /* AppDelegate.m in Sources */,
+				228191F8214255EA00B27BDE /* UICollectionView+NoDataPlaceHolder.m in Sources */,
 				6563DE3F1FAF39C800A739FB /* main.m in Sources */,
 				6563DE7B1FAF67A500A739FB /* MyTableViewCell.m in Sources */,
+				228191F9214255EA00B27BDE /* UITableView+NoDataPlaceholder.m in Sources */,
+				228191FC2142561A00B27BDE /* NoDataPlaceHolderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

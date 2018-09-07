@@ -15,6 +15,7 @@
 #import "MBProgressHUD.h"
 #import "MyModel.h"
 #import "MyTableViewCell.h"
+#import "UITableView+NoDataPlaceholder.h"
 
 static NSString *PlaceholderCellIdentifier = @"PlaceholderCell";
 
@@ -34,7 +35,7 @@ static NSString *PlaceholderCellIdentifier = @"PlaceholderCell";
     [self mjrefresh];
     
     
-    
+     [self getData];
     
     
 }
@@ -42,9 +43,7 @@ static NSString *PlaceholderCellIdentifier = @"PlaceholderCell";
 -(void)mjrefresh{
     _myTableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadmydata)];
 
-    [_myTableView.mj_header beginRefreshing];
-    
-    
+
     _myTableView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(downloadTaskWith)];
     
 }
@@ -86,8 +85,10 @@ static NSString *PlaceholderCellIdentifier = @"PlaceholderCell";
         }
         [_myTableView reloadData];
         [_myTableView.mj_header endRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
+        [_myTableView.mj_header endRefreshing];
     }];
 }
 
